@@ -47,7 +47,7 @@ pub fn main() {
     let mut test2 = unsafe { Pin::new_unchecked(&mut test2) };
     Test::init(test2.as_mut());
 
-    println!("a: {}, b: {}", Test::a(test1.as_ref()), Test::b(test1.as_ref()));
-    std::mem::swap(test1.get_mut(), test2.get_mut());
-    println!("a: {}, b: {}", Test::a(test2.as_ref()), Test::b(test2.as_ref()));
+    // println!("a: {}, b: {}", Test::a(test1.as_ref()), Test::b(test1.as_ref()));
+    // std::mem::swap(test1.get_mut(), test2.get_mut());
+    // println!("a: {}, b: {}", Test::a(test2.as_ref()), Test::b(test2.as_ref()));
 }
